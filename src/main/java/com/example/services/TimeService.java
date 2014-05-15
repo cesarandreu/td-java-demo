@@ -16,12 +16,14 @@ public class TimeService {
     @GET
     public Time get(@Context HttpServletRequest req) {
     	Time time = new Time();
-    	System.out.println("{ \"year\": " + time.getYear() +
-    						", \"month\": " + time.getMonth() +
-    						", \"day\": " + time.getDay() +
-    						", \"hour\": " + time.getHour() +
-    						", \"minute\": " + time.getMinute() +
-    						", \"ip\": \"" + req.getRemoteAddr() +"\"}");
+    	System.out.println("@[demo.times] "
+    						+ "{ \"year\": " + time.getYear()
+    						+ ", \"month\": " + time.getMonth()
+    						+ ", \"day\": " + time.getDay()
+    						+ ", \"hour\": " + time.getHour()
+    						+ ", \"minute\": " + time.getMinute()
+    						+ ", \"ip\": \"" + req.getRemoteAddr()
+    						+ "\"}");
         return time;
     }
 
