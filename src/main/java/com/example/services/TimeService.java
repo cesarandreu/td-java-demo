@@ -13,6 +13,7 @@ public class TimeService {
 
     @GET
     public Time get() {
+    	System.out.println("showing time");
         return new Time();
     }
 
